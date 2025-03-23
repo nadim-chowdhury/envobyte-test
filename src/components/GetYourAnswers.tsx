@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function GetYourAnswers() {
   return (
-    <div className="bg-white py-20">
+    <div className="bg-white py-20 z-20">
       <div className="text-center mb-6">
         <h5 className="text-sm uppercase text-blue-500 font-medium tracking-widest">
           More Details

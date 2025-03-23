@@ -1,61 +1,67 @@
 "use client";
 
+import { categories, portfolioImages } from "@/utils/portfolio-section-items";
 import Image from "next/image";
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
-const categories = [
-  "UI/UX",
-  "WEBSITE",
-  "SEO",
-  "LOGO DESIGN",
-  "BANNER DESIGN",
-  "GOOGLE ADS",
-];
-
-const portfolioImages = [
-  "/images/portfolio1.jpg",
-  "/images/portfolio2.jpg",
-  "/images/portfolio3.jpg",
-  "/images/portfolio4.jpg",
-  "/images/portfolio5.jpg",
-  "/images/portfolio6.jpg",
-];
 
 export default function PortfolioSection() {
   const [activeCategory, setActiveCategory] = useState("UI/UX");
 
   return (
-    <div className="py-16 bg-gray-100">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="py-16 bg-white">
+      <div className="">
         {/* Header */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <p className="text-sm text-blue-500 uppercase font-medium">
             UI/UX Portfolio
           </p>
           <h2 className="text-3xl font-bold mt-2">Check Our Previous Work</h2>
-        </div>
+        </div> */}
 
-        {/* Categories */}
-        <div className="flex justify-center gap-6 mt-6">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setActiveCategory(category)}
-              className={`text-sm font-medium uppercase px-4 py-2 transition ${
-                activeCategory === category
-                  ? "text-blue-600 border-b-2 border-blue-600"
-                  : "text-gray-500"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
+        {/* top */}
+        <div className="relative">
+          {/* <div className="bg-[url('/assets/answers-bg.png')] bg-cover bg-center bg-no-repeat h-[712px] w-full absolute bottom-0 left-0 -z-10"></div> */}
+
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex items-end justify-between">
+              <div>
+                <p className="text-sm text-orange-500 uppercase font-medium">
+                  UI/UX Portfolio
+                </p>
+                <h2 className="text-3xl font-bold mt-2 text-background">
+                  Check Our Previous Work
+                </h2>
+              </div>
+
+              <div>
+                <button className="bg-primary h-10 w-60 text-white font-semibold rounded">
+                  All Services
+                </button>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 mt-6 pb-4">
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setActiveCategory(category)}
+                  className={`text-sm font-medium uppercase transition ${
+                    activeCategory === category
+                      ? "text-blue-400 border-b-2 border-blue-400"
+                      : "text-gray-400"
+                  }`}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Portfolio Slider */}
-        <div className="relative mt-8 overflow-hidden">
-          <div className="grid grid-cols-3 gap-6">
+        <div className="relative mt-8 overflow-hidden max-w-7xl mx-auto px-6 z-20">
+          <div className="grid grid-cols-4 gap-6">
             {portfolioImages.map((src, index) => (
               <div key={index} className="bg-white p-2 rounded-lg shadow-lg">
                 <Image
@@ -63,7 +69,7 @@ export default function PortfolioSection() {
                   alt={`Portfolio ${index + 1}`}
                   width={1280}
                   height={720}
-                  className="rounded-lg object-cover"
+                  className="h-full w-full rounded-lg object-cover"
                 />
               </div>
             ))}
@@ -71,12 +77,12 @@ export default function PortfolioSection() {
 
           {/* Navigation Buttons */}
           <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
-            <button className="bg-white p-3 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition">
+            <button className="bg-primary p-3 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition">
               <FaChevronLeft />
             </button>
           </div>
           <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
-            <button className="bg-white p-3 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition">
+            <button className="bg-primary p-3 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition">
               <FaChevronRight />
             </button>
           </div>

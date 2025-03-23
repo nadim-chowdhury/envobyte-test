@@ -21,7 +21,7 @@ export default function TestimonialSlider() {
   return (
     <section className="py-12 bg-white">
       <div className="text-center mb-8">
-        <h5 className="text-blue-600 uppercase font-medium tracking-widest">
+        <h5 className="text-blue-600 uppercase font-medium tracking-widest mb-4">
           Client Reviews
         </h5>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -33,20 +33,17 @@ export default function TestimonialSlider() {
       <div className="max-w-5xl mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.slice(currentIndex, currentIndex + 3).map((t) => (
-            <div
-              key={t.id}
-              className="border rounded-lg shadow-sm p-6 text-center"
-            >
+            <div key={t.id} className="border border-gray-300 rounded p-6">
               {/* Rating Stars */}
-              <div className="flex justify-center mb-3 text-yellow-500">
+              <div className="flex mb-3 text-blue-600">
                 {"★".repeat(t.rating)}
               </div>
 
               {/* Review Text */}
-              <p className="text-gray-700 italic">{t.review}</p>
+              <p className="text-gray-700 italic">&quot;{t.review}&quot;</p>
 
               {/* Profile */}
-              <div className="flex items-center mt-4 justify-center space-x-3">
+              <div className="flex items-center mt-4 space-x-3">
                 <Image
                   src={t.profileImg}
                   alt={t.name}

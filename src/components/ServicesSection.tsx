@@ -1,66 +1,50 @@
 "use client";
 
+import { categories, services } from "@/utils/service-section-items";
+import Image from "next/image";
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
-const categories = [
-  "WEBSITE",
-  "UI/UX",
-  "SEO",
-  "LOGO DESIGN",
-  "BANNER DESIGN",
-  "GOOGLE ADS",
-];
-
-const services = [
-  {
-    title: "WordPress Website",
-    description: "Design & Development",
-    icon: "🖥️",
-  },
-  {
-    title: "Content Writing",
-    description: "For entire project",
-    icon: "📝",
-  },
-  {
-    title: "Monthly SEO",
-    description: "Rank #1 on Google",
-    icon: "📊",
-  },
-];
 
 export default function ServicesSection() {
   const [activeCategory, setActiveCategory] = useState("WEBSITE");
 
   return (
-    <div className="py-16 bg-[#0A1F44] text-white">
+    <div className="py-16 bg-background text-white">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <div className="text-center">
-          <p className="text-sm text-orange-500 uppercase font-medium">
-            Digital Services
-          </p>
-          <h2 className="text-3xl font-bold mt-2">
-            Check Our Available Services
-          </h2>
-        </div>
+        {/* top */}
+        <div>
+          <div className="flex items-end justify-between">
+            <div>
+              <p className="text-sm text-orange-500 uppercase font-medium">
+                Digital Services
+              </p>
+              <h2 className="text-3xl font-bold mt-2">
+                Check Our Available Services
+              </h2>
+            </div>
 
-        {/* Categories */}
-        <div className="flex justify-center gap-6 mt-6 border-b border-gray-600 pb-4">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setActiveCategory(category)}
-              className={`text-sm font-medium uppercase px-4 py-2 transition ${
-                activeCategory === category
-                  ? "text-blue-400 border-b-2 border-blue-400"
-                  : "text-gray-400"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
+            <div>
+              <button className="bg-primary h-10 w-60 text-white font-semibold rounded">
+                All Services
+              </button>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4 mt-6 pb-4">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={`text-sm font-medium uppercase transition ${
+                  activeCategory === category
+                    ? "text-blue-400 border-b-2 border-blue-400"
+                    : "text-gray-400"
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Services List */}
@@ -68,16 +52,25 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#0E2A52] p-6 rounded-lg text-center shadow-lg"
+              className="bg-[#3158C733]/20 p-6 text-center border border-gray-500 rounded"
             >
-              <div className="text-5xl">{service.icon}</div>
+              <div className="flex items-center justify-center">
+                <Image
+                  src={service.icon}
+                  alt=""
+                  width={960}
+                  height={960}
+                  className="w-44 h-44 object-contain"
+                />
+              </div>
+
               <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
               <p className="text-gray-400 mt-2">{service.description}</p>
-              <div className="mt-4 flex justify-center gap-4">
-                <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">
+              <div className="mt-4 flex items-center justify-center gap-4 text-sm">
+                <button className="bg-blue-500 hover:bg-blue-600 text-white w-28 h-9 rounded-full">
                   Portfolio
                 </button>
-                <button className="border border-blue-500 text-blue-400 hover:bg-blue-600 hover:text-white px-4 py-2 rounded-lg">
+                <button className="border border-blue-500 text-blue-400 hover:bg-blue-600 hover:text-white w-28 h-9 rounded-full">
                   Order
                 </button>
               </div>
@@ -90,9 +83,7 @@ export default function ServicesSection() {
           <button className="bg-white text-gray-700 p-3 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition">
             <FaChevronLeft />
           </button>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg">
-            All Services
-          </button>
+
           <button className="bg-white text-gray-700 p-3 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition">
             <FaChevronRight />
           </button>

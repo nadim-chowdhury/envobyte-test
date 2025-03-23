@@ -5,9 +5,9 @@ export const testimonials = [
     review:
       "Lorem ipsum dolor sit amet dolor sit consectetur eget maecenas sapien fusce egestas risus purus suspendisse turpis volutpat onare",
     rating: 5,
-    profileImg: "/images/stephanie.jpg",
+    profileImg: "/assets/client-1.png",
     platform: "Fiverr",
-    platformLogo: "/images/fiverr.png",
+    platformLogo: "/assets/fiverr.png",
   },
   {
     id: 2,
@@ -15,9 +15,9 @@ export const testimonials = [
     review:
       "Lorem ipsum dolor sit amet dolor sit consectetur eget maecenas sapien fusce egestas risus purus suspendisse turpis volutpat onare",
     rating: 5,
-    profileImg: "/images/brian.jpg",
+    profileImg: "/assets/client-2.png",
     platform: "Fiverr",
-    platformLogo: "/images/fiverr.png",
+    platformLogo: "/assets/fiverr.png",
   },
   {
     id: 3,
@@ -25,9 +25,9 @@ export const testimonials = [
     review:
       "Lorem ipsum dolor sit amet dolor sit consectetur eget maecenas sapien fusce egestas risus purus suspendisse turpis volutpat onare",
     rating: 5,
-    profileImg: "/images/christopher.jpg",
+    profileImg: "/assets/client-3.png",
     platform: "Upwork",
-    platformLogo: "/images/upwork.png",
+    platformLogo: "/assets/fiverr.png",
   },
   {
     id: 4,
@@ -35,9 +35,9 @@ export const testimonials = [
     review:
       "Lorem ipsum dolor sit amet dolor sit consectetur eget maecenas sapien fusce egestas risus purus suspendisse turpis volutpat onare",
     rating: 5,
-    profileImg: "/images/stephanie.jpg",
+    profileImg: "/assets/client-2.png",
     platform: "Fiverr",
-    platformLogo: "/images/fiverr.png",
+    platformLogo: "/assets/fiverr.png",
   },
   {
     id: 5,
@@ -45,9 +45,9 @@ export const testimonials = [
     review:
       "Lorem ipsum dolor sit amet dolor sit consectetur eget maecenas sapien fusce egestas risus purus suspendisse turpis volutpat onare",
     rating: 5,
-    profileImg: "/images/brian.jpg",
+    profileImg: "/assets/client-3.png",
     platform: "Fiverr",
-    platformLogo: "/images/fiverr.png",
+    platformLogo: "/assets/fiverr.png",
   },
   {
     id: 6,
@@ -55,8 +55,8 @@ export const testimonials = [
     review:
       "Lorem ipsum dolor sit amet dolor sit consectetur eget maecenas sapien fusce egestas risus purus suspendisse turpis volutpat onare",
     rating: 5,
-    profileImg: "/images/christopher.jpg",
+    profileImg: "/assets/client-1.png",
     platform: "Upwork",
-    platformLogo: "/images/upwork.png",
+    platformLogo: "/assets/fiverr.png",
   },
 ];

@@ -18,7 +18,7 @@ export default function TeamSlider() {
   return (
     <section className="py-12 bg-white">
       <div className="text-center mb-8">
-        <h5 className="text-blue-600 uppercase font-medium tracking-widest">
+        <h5 className="text-blue-600 uppercase font-medium tracking-widest mb-4">
           Experienced Team
         </h5>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -38,7 +38,7 @@ export default function TeamSlider() {
                 height={960}
                 className="w-full h-72 object-cover rounded-lg"
               />
-              <div className="absolute bottom-0 left-0 w-full bg-blue-700 text-white py-3 px-4">
+              <div className="absolute bottom-0 left-0 w-full bg-blue-900 text-white py-3 px-4">
                 <h5 className="text-lg font-semibold">{member.name}</h5>
                 <p className="text-sm">{member.role}</p>
               </div>

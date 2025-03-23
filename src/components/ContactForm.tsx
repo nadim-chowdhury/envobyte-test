@@ -25,10 +25,10 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-12 bg-gradient-to-br from-[#04134d] to-[#020b33] text-white">
+    <section className="py-12 bg-background text-white">
       <div className="max-w-6xl mx-auto px-6 flex flex-col lg:flex-row gap-12">
         {/* Contact Form */}
-        <div className="bg-white bg-opacity-10 backdrop-blur-lg p-6 rounded-lg w-full lg:w-1/2">
+        <div className="bg-background bg-opacity-10 backdrop-blur-lg p-6 rounded-lg w-full lg:w-1/2">
           <form
             onSubmit={handleSubmit}
             className="grid grid-cols-1 md:grid-cols-2 gap-4"
