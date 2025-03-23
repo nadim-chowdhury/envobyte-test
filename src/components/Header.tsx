@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="flex items-center justify-between px-6 py-4">
+    <header className="flex items-center justify-between px-6 py-4">
       {/* logo */}
-      <div>
+      <div className="w-60">
         <Image
           src="/assets/logo.png"
           alt=""
@@ -27,8 +27,8 @@ export default function Header() {
 
       {/* cta */}
       <div>
-        <button className="w-60 bg-primary h-12">See Pricing</button>
+        <button className="w-60 bg-primary h-12 rounded">See Pricing</button>
       </div>
-    </div>
+    </header>
   );
 }
