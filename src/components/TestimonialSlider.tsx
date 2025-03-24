@@ -19,9 +19,9 @@ export default function TestimonialSlider() {
   };
 
   return (
-    <section className="py-12 bg-white">
+    <section className="pb-20 pt-28 bg-white">
       <div className="text-center mb-8">
-        <h5 className="text-blue-600 uppercase font-medium tracking-widest mb-4">
+        <h5 className="text-blue-600 uppercase font-medium tracking-widest mb-2">
           Client Reviews
         </h5>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -32,7 +32,7 @@ export default function TestimonialSlider() {
       {/* Testimonials Grid */}
       <div className="max-w-5xl mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.slice(currentIndex, currentIndex + 3).map((t) => (
+          {testimonials.slice(currentIndex, currentIndex + 6).map((t) => (
             <div
               key={t.id}
               className="border border-gray-300 rounded p-6 transition-all duration-300 hover:bg-gray-50"

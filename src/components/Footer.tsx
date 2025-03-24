@@ -47,7 +47,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-background text-white py-8">
+    <footer className="bg-background text-white py-8 relative">
       <div className="container mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
         {/* Company Info */}
         <div className="pr-8">
@@ -121,6 +121,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      <div className="absolute left-1/2 top-1/2 w-80 h-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-radial from-white to-transparent z-50"></div>
 
       <div className="border-blue-600 text-center text-xs">
         <p>&copy;2025 - ENVOBYTE, All rights reserved.</p>

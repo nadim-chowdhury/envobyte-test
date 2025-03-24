@@ -18,13 +18,15 @@ export default function ServicesSection() {
         {/* top */}
         <div>
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between">
-            <div>
+            <div className="relative">
               <p className="text-sm text-orange-500 uppercase font-medium">
                 Digital Services
               </p>
               <h2 className="text-3xl font-bold mt-2">
                 Check Our Available Services
               </h2>
+
+              <div className="absolute left-1/2 top-1/2 w-80 h-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-radial from-white to-transparent z-50"></div>
             </div>
 
             <div className="mt-4 md:mt-0">
@@ -52,7 +54,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Services List with Swiper */}
-        <div className="mt-8">
+        <div className="mt-8 relative">
           <Swiper
             modules={[Navigation]}
             spaceBetween={20}

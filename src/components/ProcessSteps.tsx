@@ -3,13 +3,13 @@ import { processSteps } from "@/utils/process-steps";
 export default function ProcessSteps() {
   return (
     <div
-      className="relative bg-cover bg-center bg-no-repeat text-white py-20 px-6"
+      className="relative bg-cover bg-center bg-no-repeat text-white py-36 px-6"
       style={{ backgroundImage: "url('/assets/process-banner-bg.jpg')" }}
     >
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-blue-900 opacity-50"></div>
+      <div className="absolute inset-0 bg-blue-900 opacity-40"></div>
 
-      <div className="relative max-w-4xl mx-auto text-center">
+      <div className="relative max-w-7xl mx-auto text-center">
         <p className="text-sm uppercase tracking-widest text-gray-300">
           HOW WE WORK
         </p>
@@ -42,7 +42,7 @@ export default function ProcessSteps() {
         </div>
 
         {/* Contact Button */}
-        <div className="mt-12">
+        <div className="mt-16">
           <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold w-60 h-9 rounded cursor-pointer transition-all duration-300">
             Contact Now
           </button>

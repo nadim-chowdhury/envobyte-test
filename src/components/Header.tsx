@@ -40,7 +40,7 @@ export default function Header() {
           <Link
             key={item.id}
             href={item.url}
-            className="py-2 md:py-0 transition-colors duration-300 hover:text-primary"
+            className="py-2 md:py-0 transition-colors duration-300 hover:text-primary uppercase"
           >
             {item.name}
           </Link>
@@ -59,7 +59,9 @@ export default function Header() {
           <Link
             key={item.id}
             href={item.url}
-            className="py-2 transition-colors duration-300 hover:text-primary"
+            className={`py-2 transition-colors duration-300 hover:text-primary uppercase font-medium tracking-wide ${
+              item.id === 1 && "text-primary"
+            }`}
           >
             {item.name}
           </Link>
