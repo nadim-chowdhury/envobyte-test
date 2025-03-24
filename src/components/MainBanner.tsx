@@ -6,21 +6,26 @@ export default function MainBanner() {
     <section className="mt-8 py-12 relative w-full overflow-hidden">
       <div className="flex flex-col items-center gap-12">
         <div className="text-center uppercase space-y-4">
-          <h1 className="font-bold text-7xl">Digital Service</h1>
+          <h1 className="font-bold text-4xl md:text-7xl">Digital Service</h1>
           <h3 className="font-bold">Building your empire digitally</h3>
         </div>
 
-        <div className="flex items-center gap-4">
-          <button className="w-60 h-12 bg-primary rounded">See Pricing</button>
-          <button className="w-60 h-12 rounded border">
+        <div className="flex flex-col md:flex-row items-center gap-4">
+          <button className="w-60 h-12 bg-primary rounded transition-all duration-300 hover:bg-primary/80 cursor-pointer">
+            See Pricing
+          </button>
+          <button className="w-60 h-12 rounded border transition-all duration-300 hover:bg-blue-900 cursor-pointer">
             Book an appointment
           </button>
         </div>
       </div>
 
-      <div className="flex items-center justify-between w-6xl mx-auto my-12">
+      <div className="grid grid-cols-1 md:grid-cols-4 md:w-6xl md:mx-auto my-12">
         {bannerItems?.map((item) => (
-          <div key={item.id} className="flex items-center justify-center gap-2">
+          <div
+            key={item.id}
+            className="flex items-center md:justify-center gap-2 w-48 mx-auto"
+          >
             <Image
               src={item.img}
               alt=""
@@ -43,7 +48,7 @@ export default function MainBanner() {
           alt=""
           width={1280}
           height={720}
-          className="w-1/2"
+          className="md:w-1/2"
         />
       </div>
 

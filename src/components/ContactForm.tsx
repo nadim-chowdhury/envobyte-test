@@ -87,7 +87,7 @@ export default function ContactForm() {
             <div className="col-span-2">
               <button
                 type="submit"
-                className="w-full py-3 mt-2 bg-blue-500 hover:bg-blue-600 transition text-white rounded-md flex items-center justify-center"
+                className="px-6 py-2 mt-2 bg-blue-500 hover:bg-blue-600 transition text-white rounded-lg flex items-center justify-center"
               >
                 Send message →
               </button>
@@ -106,7 +106,7 @@ export default function ContactForm() {
           </p>
 
           <div className="space-y-4">
-            <div className="flex items-center gap-3 border-b border-gray-500 pb-2">
+            <div className="flex items-center gap-3 pb-2">
               <MdEmail className="text-xl text-blue-400" />
               <a
                 href="mailto:support@envobyte.com"
@@ -115,7 +115,7 @@ export default function ContactForm() {
                 support@envobyte.com
               </a>
             </div>
-            <div className="flex items-center gap-3 border-b border-gray-500 pb-2">
+            <div className="flex items-center gap-3 pb-2">
               <FaWhatsapp className="text-xl text-green-400" />
               <a
                 href="tel:+16677772477"
@@ -124,7 +124,7 @@ export default function ContactForm() {
                 +1 (667) 777 2477
               </a>
             </div>
-            <div className="flex items-center gap-3 border-b border-gray-500 pb-2">
+            <div className="flex items-center gap-3 pb-2">
               <FaLinkedin className="text-xl text-blue-600" />
               <a
                 href="https://www.linkedin.com/company/envobyte"

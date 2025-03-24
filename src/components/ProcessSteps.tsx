@@ -23,7 +23,7 @@ export default function ProcessSteps() {
         </p>
 
         {/* Process Steps */}
-        <div className="relative mt-10 grid grid-cols-4">
+        <div className="relative mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {/* Dotted Line */}
           <div className="absolute top-1/2 left-0 right-0 mx-auto border-t-2 border-dashed border-gray-400 w-4/5 hidden md:block"></div>
 
@@ -31,7 +31,7 @@ export default function ProcessSteps() {
           {processSteps.map((item, index) => (
             <div
               key={index}
-              className="relative bg-gradient-to-b from-[#d25b43] to-[#222665] w-40 h-40 rounded-full flex items-center justify-start text-center shadow-lg"
+              className="relative bg-gradient-to-b from-[#d25b43] to-[#222665] w-40 h-40 rounded-full flex items-center justify-start text-center shadow-lg mx-auto"
             >
               <div className="text-white font-bold text-start pl-6">
                 <p className="text-2xl">{item.step}</p>
@@ -43,7 +43,7 @@ export default function ProcessSteps() {
 
         {/* Contact Button */}
         <div className="mt-12">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold w-60 h-9 rounded">
+          <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold w-60 h-9 rounded cursor-pointer transition-all duration-300">
             Contact Now
           </button>
         </div>

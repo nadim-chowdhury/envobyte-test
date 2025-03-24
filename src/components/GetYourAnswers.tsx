@@ -13,13 +13,13 @@ export default function GetYourAnswers() {
         </h3>
       </div>
 
-      <div className="grid grid-cols-3 w-1/2 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:w-1/2 md:mx-auto px-6 md:px-0">
         {getYourAnswers?.map((item) => (
           <div
             key={item.id}
             className={`${item.id === 1 ? "bg-background" : ""} ${
               item.id === 2
-                ? "border-y border-gray-300"
+                ? "border-x md:border-y border-gray-300"
                 : "border border-gray-300"
             }`}
           >
@@ -55,7 +55,9 @@ export default function GetYourAnswers() {
       </div>
 
       <div className="flex items-center justify-center mt-12">
-        <button className="bg-primary w-44 h-10 rounded">See Pricing</button>
+        <button className="bg-primary w-44 h-10 rounded transition-all duration-300 cursor-pointer hover:bg-primary/80">
+          See Pricing
+        </button>
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ export default function TeamSlider() {
                 alt={member.name}
                 width={720}
                 height={960}
-                className="w-full h-72 object-cover rounded-lg"
+                className="w-full h-72 object-cover rounded-lg transition-all duration-300 hover:shadow-xl hover:rounded-lg"
               />
               <div className="absolute bottom-0 left-0 w-full bg-blue-900 text-white py-3 px-4">
                 <h5 className="text-lg font-semibold">{member.name}</h5>
@@ -50,13 +50,13 @@ export default function TeamSlider() {
         <div className="flex justify-center gap-4 mt-6">
           <button
             onClick={prevSlide}
-            className="p-2 rounded border border-gray-300 hover:bg-gray-100 transition text-background"
+            className="p-2 rounded border border-gray-300 hover:bg-gray-100 transition-all duration-300 cursor-pointer text-background"
           >
             <FaChevronLeft />
           </button>
           <button
             onClick={nextSlide}
-            className="p-2 rounded bg-orange-500 text-white hover:bg-orange-600 transition"
+            className="p-2 rounded bg-orange-500 text-white hover:bg-orange-600 transition-all duration-300 cursor-pointer"
           >
             <FaChevronRight />
           </button>

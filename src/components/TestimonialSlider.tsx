@@ -33,7 +33,10 @@ export default function TestimonialSlider() {
       <div className="max-w-5xl mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.slice(currentIndex, currentIndex + 3).map((t) => (
-            <div key={t.id} className="border border-gray-300 rounded p-6">
+            <div
+              key={t.id}
+              className="border border-gray-300 rounded p-6 transition-all duration-300 hover:bg-gray-50"
+            >
               {/* Rating Stars */}
               <div className="flex mb-3 text-blue-600">
                 {"★".repeat(t.rating)}
@@ -74,13 +77,13 @@ export default function TestimonialSlider() {
         <div className="flex justify-center gap-4 mt-6">
           <button
             onClick={prevSlide}
-            className="p-2 rounded border border-gray-300 hover:bg-gray-100 transition text-background"
+            className="p-2 rounded border border-gray-300 hover:bg-gray-100 transition-all duration-300 cursor-pointer text-background"
           >
             <FaChevronLeft />
           </button>
           <button
             onClick={nextSlide}
-            className="p-2 rounded bg-orange-500 text-white hover:bg-orange-600 transition"
+            className="p-2 rounded bg-orange-500 text-white hover:bg-orange-600 transition-all duration-300 cursor-pointer"
           >
             <FaChevronRight />
           </button>
