@@ -50,13 +50,13 @@ export default function TeamSlider() {
         <div className="flex justify-center gap-4 mt-6">
           <button
             onClick={prevSlide}
-            className="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition"
+            className="p-2 rounded border border-gray-300 hover:bg-gray-100 transition text-background"
           >
             <FaChevronLeft />
           </button>
           <button
             onClick={nextSlide}
-            className="p-2 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition"
+            className="p-2 rounded bg-orange-500 text-white hover:bg-orange-600 transition"
           >
             <FaChevronRight />
           </button>

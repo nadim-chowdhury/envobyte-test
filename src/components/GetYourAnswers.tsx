@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function GetYourAnswers() {
   return (
     <div className="bg-white py-20 z-20">
-      <div className="text-center mb-6">
-        <h5 className="text-sm uppercase text-blue-500 font-medium tracking-widest">
+      <div className="text-center mb-12">
+        <h5 className="text-sm uppercase text-blue-500 font-medium tracking-widest mb-2">
           More Details
         </h5>
         <h3 className="text-5xl font-semibold text-background">
@@ -54,7 +54,7 @@ export default function GetYourAnswers() {
         ))}
       </div>
 
-      <div className="flex items-center justify-center mt-6">
+      <div className="flex items-center justify-center mt-12">
         <button className="bg-primary w-44 h-10 rounded">See Pricing</button>
       </div>
     </div>

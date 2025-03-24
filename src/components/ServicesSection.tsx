@@ -10,7 +10,7 @@ export default function ServicesSection() {
 
   return (
     <div className="py-16 bg-background text-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="container mx-auto px-6">
         {/* top */}
         <div>
           <div className="flex items-end justify-between">
@@ -80,13 +80,18 @@ export default function ServicesSection() {
 
         {/* Navigation Buttons */}
         <div className="flex justify-center gap-4 mt-6">
-          <button className="bg-white text-gray-700 p-3 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition">
+          <button className="bg-white text-gray-700 p-3 rounded shadow-lg hover:bg-blue-500 hover:text-white transition">
             <FaChevronLeft />
           </button>
 
-          <button className="bg-white text-gray-700 p-3 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition">
+          <button className="bg-primary text-white p-3 rounded shadow-lg hover:bg-blue-500 hover:text-white transition">
             <FaChevronRight />
           </button>
+        </div>
+
+        <div className="flex items-center justify-end gap-4">
+          <h4 className="uppercase tracking-widest">Creative Solution</h4>
+          <div className="h-[2px] w-20 bg-white"></div>
         </div>
       </div>
     </div>

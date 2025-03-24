@@ -10,7 +10,7 @@ export default function PortfolioSection() {
 
   return (
     <div className="py-16 bg-white">
-      <div className="">
+      <div className="container mx-auto px-6">
         {/* Header */}
         {/* <div className="text-center">
           <p className="text-sm text-blue-500 uppercase font-medium">
@@ -23,7 +23,7 @@ export default function PortfolioSection() {
         <div className="relative">
           {/* <div className="bg-[url('/assets/answers-bg.png')] bg-cover bg-center bg-no-repeat h-[712px] w-full absolute bottom-0 left-0 -z-10"></div> */}
 
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="">
             <div className="flex items-end justify-between">
               <div>
                 <p className="text-sm text-orange-500 uppercase font-medium">
@@ -36,7 +36,7 @@ export default function PortfolioSection() {
 
               <div>
                 <button className="bg-primary h-10 w-60 text-white font-semibold rounded">
-                  All Services
+                  All Portfolio
                 </button>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function PortfolioSection() {
         </div>
 
         {/* Portfolio Slider */}
-        <div className="relative mt-8 overflow-hidden max-w-7xl mx-auto px-6 z-20">
+        <div className="relative mt-8 overflow-hidden container mx-auto z-20">
           <div className="grid grid-cols-4 gap-6">
             {portfolioImages.map((src, index) => (
               <div key={index} className="bg-white p-2 rounded-lg shadow-lg">
@@ -76,7 +76,7 @@ export default function PortfolioSection() {
           </div>
 
           {/* Navigation Buttons */}
-          <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
+          {/* <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
             <button className="bg-primary p-3 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition">
               <FaChevronLeft />
             </button>
@@ -85,14 +85,33 @@ export default function PortfolioSection() {
             <button className="bg-primary p-3 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition">
               <FaChevronRight />
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* View All Portfolio Button */}
-        <div className="text-center mt-10">
+        {/* <div className="text-center mt-10">
           <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg">
             All Portfolio
           </button>
+        </div>
+         */}
+
+        {/* Navigation Buttons */}
+        <div className="flex justify-center gap-4 mt-6">
+          <button className="bg-white text-gray-700 p-3 rounded hover:bg-blue-500 hover:text-white transition border border-gray-300">
+            <FaChevronLeft />
+          </button>
+
+          <button className="bg-primary text-white p-3 rounded shadow-lg hover:bg-blue-500 hover:text-white transition">
+            <FaChevronRight />
+          </button>
+        </div>
+
+        <div className="flex items-center justify-end gap-4">
+          <h4 className="uppercase tracking-widest text-background">
+            Creative Solution
+          </h4>
+          <div className="h-[2px] w-20 bg-background"></div>
         </div>
       </div>
     </div>

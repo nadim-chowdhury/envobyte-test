@@ -13,17 +13,17 @@ export default function ProcessSteps() {
         <p className="text-sm uppercase tracking-widest text-gray-300">
           HOW WE WORK
         </p>
-        <h2 className="text-3xl font-bold mt-2">
+        <h2 className="text-4xl font-bold mt-4">
           Our Process For Delivering Results
         </h2>
-        <p className="text-gray-300 mt-4">
+        <p className="text-gray-300 mt-6">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry’s standard dummy text
           ever.
         </p>
 
         {/* Process Steps */}
-        <div className="relative flex flex-col items-center md:flex-row md:justify-between mt-10">
+        <div className="relative mt-10 grid grid-cols-4">
           {/* Dotted Line */}
           <div className="absolute top-1/2 left-0 right-0 mx-auto border-t-2 border-dashed border-gray-400 w-4/5 hidden md:block"></div>
 
@@ -42,7 +42,7 @@ export default function ProcessSteps() {
         </div>
 
         {/* Contact Button */}
-        <div className="mt-8">
+        <div className="mt-12">
           <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold w-60 h-9 rounded">
             Contact Now
           </button>
